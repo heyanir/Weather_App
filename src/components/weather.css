@@ -1,0 +1,105 @@
+.Weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #1E1E2E, #6A0DAD);
+    position: relative;
+}
+.Search-Bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px; /* Adjust the top value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Search-Bar input {
+    width: 300px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Search-Bar img {
+    width: 37px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.Weather-Icon {
+    width: 200px; /* Adjust size as needed */
+    position: absolute; /* Add this to position the icon */
+    top: 30%; /* Adjust these values to move the icon */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Temperature{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    color:whitesmoke;
+    
+}
+.Location{
+
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    font-size: 50px;
+    font-weight: 300;
+    color:whitesmoke;
+}
+.Weather-Data{
+
+    width: 50%;
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-between;
+    margin-top: 30%;
+    position: absolute;
+}
+.Weather-Data .col3 img{
+
+    width: 45px;
+    color: whitesmoke;
+}
+.Weather-Data .col5 img{
+
+    width: 50px;
+}
+.Weather-Data .col1,
+.Weather-Data .col2,
+.Weather-Data .col3,
+.Weather-Data .col5,
+.Weather-Data .col4{
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: 20px;
+    flex-direction: column-reverse;
+}
+.Weather-Data .col1 span,
+.Weather-Data .col2 span,
+.Weather-Data .col3 span,
+.Weather-Data .col5 span,
+.Weather-Data .col4 span{
+
+    display: block;
+    font-size: 15px;
+}
+.Weather-Data .col4 img
+{
+    width: 50px;
+}
+.Weather-Data .col5{
+
+    margin-bottom: 1.5%;
+}
